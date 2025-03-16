@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+            <h1>Paul</h1>
+            <h2>He/him</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#other-contacts">Other contacts</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#future-goals">Future Goals</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#testimonials">Comments</a></li>
+                </ul>
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            </nav>
+        </header>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello, I'm Paul. I am a passionate web developer that is skillful in HTML and CSS.
+                    I like coding, and I can yoyo. I made this website fully out of raw HTML and CSS.
+                    I am 9-10 years old. I will continue updating this.
+                </p>
+                <img src="hello.png" alt="My Profile Picture">
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact me</h2>
+                <p>Emails: pauljparker15@gmail.com and paul-parker10@outlook.com</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <div class="container">
+                <h2>My skills/hobbies:</h2>
+                <ul>
+                    <li>Yoyoing</li>
+                    <li>Coding</li>
+                    <li>Playing video games</li>
+                    <li>Making this website fully out of HTML and CSS!</li>
+                    <li>I specialize in GLITCHING VIDEO GAMES!!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="other-contacts">
+            <div class="container">
+                <h2>My other contacts include:</h2>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@Dioxide_X5" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.roblox.com/users/7600513222/profile" target="_blank">Roblox</a></li>
+                        <li><a href="https://www.scratch.mit.edu/users/paulisaball/" target="_blank">Scratch</a></li>
+                    </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Some of my projects include:</h2>
+                <ul>
+                    <li><a href="https://scratch.mit.edu/projects/1125162211/" target="_blank">A "Phone Game"</a></li>
+                    <li><a href="https://scratch.mit.edu/projects/1097541904/"" target="_blank">A Platformer</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="future-goals">
+            <div class="container">
+                <h2>My future goals are:</h2>
+                <ul>
+                    <li>Going Godspeed on a Yoyo</li>
+                    <li>Learning Rust</li>
+                    <li>Going to college</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="video">
+            <div class="container">
+                <h2>Check out a video I made</h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/ASibZflnd2o" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <!-- Content Sections -->
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>What People Are Saying</h2>
+                <div id="testimonial-container"></div>
+            </div>
+        </section>
+
+        <!-- Link to JavaScript file -->
+        <script src="testimonials.js"></script>
+        <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Check if dark mode is enabled from localStorage
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        body.classList.add('dark-mode');
+    }
+
+    // Toggle dark mode on button click
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        // Save the user's preference in localStorage
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('dark-mode', 'enabled');
+        } else {
+            localStorage.setItem('dark-mode', 'disabled');
+        }
+    });
+</script>
+
+        </script>
+
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Paul&trade;. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

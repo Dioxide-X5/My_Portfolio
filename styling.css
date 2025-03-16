@@ -1,0 +1,187 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header and navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.project {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+img {
+    width: 300px;
+    height: auto;
+}
+a:hover {
+    color: aqua;
+}
+body, a, li {
+    cursor: default;
+}
+/* Create the bobbing animation */
+@keyframes bobbing {
+    0% {
+      transform: translateY(0); /* start at normal position */
+    }
+    50% {
+      transform: translateY(-5px); /* move up by 5px */
+    }
+    100% {
+      transform: translateY(0); /* return to the original position */
+    }
+  }
+  /* Apply the animation when hovering over text */
+  a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, li:hover, p:hover, img:hover, ul:hover {
+    animation: bobbing 0.5s ease-in-out infinite; /* 0.5s duration, ease in-out timing, and infinite repeat */
+  }
+  #testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    color: #666;
+    font-weight: bold;
+}
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: #ddd;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
